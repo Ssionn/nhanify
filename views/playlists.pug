@@ -9,9 +9,9 @@ block main
           each msg in flash[msgType]
             pre(class=`${msgType}`) #{msg}
     .emptyMessage
-      p There is currently no playlist. 
+      p No playlists available
       if (user !== undefined && playlistType === "your")
-        p Click "Create" to create a playlist.
+        p Click below to create a playlist
         a(href=`/${playlistType}/playlists/${page}/create`) Create 
   else 
     .playlistsDiv

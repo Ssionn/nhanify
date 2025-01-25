@@ -1,0 +1,34 @@
+.emptyMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    padding: 2rem;
+    margin: 2rem auto;
+    background-color: var(--color-tertiary);
+    border-radius: 0.5rem;
+    width: 50%;
+    gap: 1.5rem;
+}
+
+.emptyMessage p {
+    margin: 0;
+}
+
+.emptyMessage a {
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    background-color: var(--color-secondary);
+    color: var(--color-blank);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.emptyMessage a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+}

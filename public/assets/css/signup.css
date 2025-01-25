@@ -1,0 +1,73 @@
+.pageTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.signUpMessages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1rem;
+}
+
+.signUpMessages p {
+    font-size: 1.3rem;
+    padding: 0.5rem 0.3rem;
+    color: var(--color-blank);
+
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--color-secondary);
+}
+
+.twitchUser p {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.twitchForms {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8rem;
+}
+
+.twitchForms .createForm button {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    color: var(--color-blank);
+    background-color: var(--color-secondary);
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.twitchForms .createForm button:hover {
+    background-color: var(--color-primary);
+    color: black;
+}
+
+.twitchForms .cancelForm button {
+    font-size: 1.1rem;
+    padding: 0.5rem 2rem;
+    color: var(--color-blank);
+    background-color: var(--color-error);
+
+    cursor: pointer;
+
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.twitchForms .cancelForm button:hover {
+    background-color: var(--color-primary);
+    color: black;
+}

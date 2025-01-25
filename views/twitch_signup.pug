@@ -1,19 +1,19 @@
 extends layout
 
 block main 
-  .mainWrapWrap
-    .mainWrap
-      block header 
-        h1(class="pageTitle") Sign Up
-      .errorMessages
-        - let msgTypes = Object.keys(flash || {})
-        if (msgTypes.length > 0) 
-          each msgType in msgTypes
-            each msg in flash[msgType]
-              pre(class=`${msgType}`) #{msg}
-      block content
-        p Sign up as #{twitchUsername}
-        form(class="inputForm" action="/twitchSignup/Create" method="post")
-          input(type="submit" class="submit"  value="Sign Up")
-        form(class="inputForm" action="/twitchSignup/Cancel" method="post")
-          input(type="submit" class="submit"  value="Cancel")
+  block header 
+    h1(class="pageTitle") Sign Up
+  .signUpMessages
+    - let msgTypes = Object.keys(flash || {})
+    if (msgTypes.length > 0) 
+      each msgType in msgTypes
+        each msg in flash[msgType]
+          p(class=`${msgType}`) #{msg}
+  block content
+    .twitchUser
+      p Sign up as #{twitchUsername}?
+    .twitchForms
+      form(class="createForm" action="/twitchSignup/Create" method="post")
+        button(type="submit" class="twitchSignUpButton") Sign Up
+      form(class="cancelForm" action="/twitchSignup/Cancel" method="post")
+        button(type="submit" class="submit") Cancel
