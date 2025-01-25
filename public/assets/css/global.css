@@ -1,0 +1,28 @@
+@import url("navigation.css");
+@import url("signin.css");
+
+html {
+  font-size: 100%;
+  text-overflow: ellipsis;
+}
+
+:root {
+  --color-bg-dark: #0b2447;
+  --color-bg-light: white;
+  --color-primary: #a5d7e8;
+  --color-secondary: #576cbc;
+  --color-tertiary: #19376d;
+  --color-error: #c28c8c;
+  --font-size-large: 3rem;
+  --font-size-medium: 2rem;
+  --font-size-small: 1rem;
+}
+
+body {
+  font-family: "Roboto", "sans-serif";
+  font-size: 1rem;
+  background-color: var(--color-bg-dark);
+  color: white;
+  min-height: 100vh;
+  min-height: 100dvh;
+}

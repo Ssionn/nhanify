@@ -1,0 +1,87 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.navigation .div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+}
+
+.navigation .navDivLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation .navLogo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navigation .navUser p {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.navigation .div .navDivRight form button {
+  background-color: var(--color-tertiary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation .div .navDivRight a {
+  background-color: var(--color-tertiary);
+  color: white;
+  border: none;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navigation .navTabs {
+  display: flex;
+  margin-top: 1rem;
+  gap: 0.4rem;
+}
+
+.navigation .navTabs .hiNavTab {
+  border-width: 1px 1px 0px 1px;
+  background-color: var(--color-tertiary);
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.navigation .navTabs .navTab {
+  border-width: 1px 1px 0px 1px;
+  padding: 1rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.navigation .navTabs .navTab:hover {
+  border-width: 1px 1px 0px 1px;
+  padding: 1rem;
+  background-color: var(--color-tertiary);
+  border-radius: 0.7rem;
+  transition: background-color 0.2s ease;
+}
+
+.navigation .navTabs a {
+  color: white;
+  text-decoration: none;
+}
